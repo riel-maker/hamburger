@@ -1,14 +1,14 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AEAA,AAAA,SAAS,CAAC;EACN,gBAAgB,EAAE,OAAO;EACzB,OAAO,EAAE,mBAAmB;CAC3B;;AAEL,AAAA,SAAS,CAAC,EAAE,CAAA;EACR,KAAK,EAAE,OAAO;EACd,WAAW,EAAE,IAAI;CAChB;;ADDG,MAAM,EAAE,SAAS,EAAE,KAAK;EKPhC,AAAA,YAAY,CAAC;IAIL,OAAO,EAAE,IAAI;IACb,qBAAqB,EAAE,OAAO;IAC9B,kBAAkB,EAAE,SAAS;GAEpC",
     "sources": [
         "../scss/style.scss",
+        "../scss/foundation/_mixin.scss",
         "../scss/layout/_header.scss",
         "../scss/layout/_footer.scss",
         "../scss/layout/_sidebar.scss",
         "../scss/layout/_main.scss",
-        "../scss/layout/_container.sass",
-        "../scss/foundation/_mixin.scss"
+        "../scss/layout/_container.scss"
     ],
     "names": [],
     "file": "style.css"
