@@ -1,8 +1,14 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,EAAE,CAAA;EAAC,KAAK,EAAE,IAAI;CAAG",
+    "mappings": "",
     "sources": [
-        "../scss/style.scss"
+        "../scss/style.scss",
+        "../scss/layout/_header.scss",
+        "../scss/layout/_footer.scss",
+        "../scss/layout/_sidebar.scss",
+        "../scss/layout/_main.scss",
+        "../scss/layout/_container.sass",
+        "../scss/foundation/_mixin.scss"
     ],
     "names": [],
     "file": "style.css"
