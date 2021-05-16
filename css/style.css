@@ -1,3 +1,7 @@
+ul {
+  list-style: none;
+}
+
 .l-header {
   background-color: #FFF7EF;
   padding: 86px 30px 85px 65px;
@@ -6,6 +10,30 @@
 .l-header h1 {
   color: #707070;
   font-weight: bold;
+}
+
+.g-menu {
+  background-color: #F2EDE9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.g-menu h2 {
+  color: #707070;
+  font-weight: bold;
+}
+
+.p-gmenu {
+  padding-top: 82px;
+  padding-left: 46px;
+  color: #707070;
+  font-weight: normal;
+}
+
+.l-main {
+  background-color: #FFFDFA;
+  padding: 120px 111px;
 }
 
 @media (min-width: 769px) {
