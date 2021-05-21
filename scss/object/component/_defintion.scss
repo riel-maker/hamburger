@@ -1,0 +1,13 @@
+.c-defintion {
+    background-color: rgba( 255, 255, 255, .8 );
+    padding: 10px;
+    color: #3C2A10;
+    &__dt {
+        font-weight: bold;
+        margin-bottom: 5px;
+        padding: 2px 0;
+    }
+    &__dd {
+        font-size: x-small;
+    }
+}

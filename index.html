@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.min.css">
     <link rel="stylesheet" href="./css/style.css">
 
     <title>Hamburger Site</title>
@@ -16,69 +17,92 @@
                 <div class="pc_search"></div>
             </header>
             <article class="l-main">
-                <div>
-                    <h2>ダミーサイト</h2>
-                    <ul>
-                        <li><h2>Take Out</h2>
-                            <dl>
-                                <dt>小見出しが入ります</dt>
-                                <dd>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</dd>
-                            </dl>
-                        </li>
-                        <li><h2>Eat In</h2>
-                            <dl>
-                                <dt>小見出しが入ります</dt>
-                                <dd>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</dd>
-                            </dl>
-                        </li>
-                    </ul>
+                <div class="p-mainvisual">
+                    <h2 class="p-mainvisual__title">ダミーサイト</h2>
                 </div>
+                <ul class="p-brunchmenu">
+                    <li class="p-brunchmenu__list">
+                        <h2 class="p-brunchmenu__list__title">Take Out</h2>
+                        <ul class="p-brunchmenu__list__ul">
+                            <li class="p-brunchmenu__list__ul__li">
+                                <dl class="c-defintion">
+                                    <dt class="c-defintion__dt">小見出しが入ります</dt>
+                                    <dd class="c-defintion__dd">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</dd>
+                                </dl>
+                            </li>
+                            <li class="p-brunchmenu__list__ul__li">
+                                <dl class="c-defintion">
+                                    <dt class="c-defintion__dt">小見出しが入ります</dt>
+                                    <dd class="c-defintion__dd">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</dd>
+                                </dl>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="p-brunchmenu__list">
+                        <h2 class="p-brunchmenu__list__title">Eat in</h2>
+                        <ul class="p-brunchmenu__list__ul">
+                            <li class="p-brunchmenu__list__ul__li">
+                                <dl class="c-defintion">
+                                    <dt class="c-defintion__dt">小見出しが入ります</dt>
+                                    <dd class="c-defintion__dd">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</dd>
+                                </dl>
+                            </li>
+                            <li class="p-brunchmenu__list__ul__li">
+                                <dl class="c-defintion">
+                                    <dt class="c-defintion__dt">小見出しが入ります</dt>
+                                    <dd class="c-defintion__dd">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</dd>
+                                </dl>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
                 <section class="l-map">
                     <h2>見出しが入ります</h2>
                     <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
                     <div></div>
                 </section>
             </article>
-            <aside class="g-menu">
-                <nav class="p-gmenu">
-                    <ul><h2>menu</h2>
-                        <li>バーガー
-                            <ul>
-                                <li>ハンバーガー</li>
-                                <li>チーズバーガー</li>
-                                <li>テリヤキバーガー</li>
-                                <li>アボカドバーガー</li>
-                                <li>フィッシュバーガー</li>
-                                <li>ベーコンバーガー</li>
-                                <li>フィッシュバーガー</li>
-                            </ul>
-                        </li>
-                        <li>サイド
-                            <ul>
-                                <li>ポテト</li>
-                                <li>サラダ</li>
-                                <li>ナゲット</li>
-                                <li>コーン</li>
-                            </ul>
-                        </li>
-                        <li>ドリンク
-                            <ul>
-                                <li>コーラ</li>
-                                <li>ファンタ</li>
-                                <li>オレンジ</li>
-                                <li>アップル</li>
-                                <li>紅茶（Ice/Hot）</li>
-                                <li>コーヒー（Ice/Hot）</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
-            </aside>
         </main>
+        <aside class="l-sidebar">
+            <nav class="p-g-menu">
+                <ul><h2>menu</h2>
+                    <li>バーガー
+                        <ul>
+                            <li>ハンバーガー</li>
+                            <li>チーズバーガー</li>
+                            <li>テリヤキバーガー</li>
+                            <li>アボカドバーガー</li>
+                            <li>フィッシュバーガー</li>
+                            <li>ベーコンバーガー</li>
+                            <li>フィッシュバーガー</li>
+                        </ul>
+                    </li>
+                    <li>サイド
+                        <ul>
+                            <li>ポテト</li>
+                            <li>サラダ</li>
+                            <li>ナゲット</li>
+                            <li>コーン</li>
+                        </ul>
+                    </li>
+                    <li>ドリンク
+                        <ul>
+                            <li>コーラ</li>
+                            <li>ファンタ</li>
+                            <li>オレンジ</li>
+                            <li>アップル</li>
+                            <li>紅茶（Ice/Hot）</li>
+                            <li>コーヒー（Ice/Hot）</li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
     </article>
     <footer class="l-footer">
         <ul>
-            <li>ショップ情報 | ヒストリー</li>
+            <li>ショップ情報 | </li>
+            <li>ヒストリー</li>
         </ul>
         <p class="p-copyright">
             <small>Copyright: RaiseTech</small>

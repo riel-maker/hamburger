@@ -1,0 +1,28 @@
+.p-brunchmenu {
+    background-color: rgb(224, 218, 211);
+    padding: 100px;
+    min-height: auto;
+    display: flex;
+    justify-content: space-between;
+    &__list {
+        padding:15px;
+        width: 320px;
+        height: 600px;
+        background-color: cadetblue;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        &__title {
+            color: #FFF;
+            font-size: 190%;
+        }
+        &__ul {
+            &__li {
+                margin-bottom: 15px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

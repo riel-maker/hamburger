@@ -1,0 +1,10 @@
+.p-mainvisual {
+    width: 100%;
+    min-height: 285px;
+    &__title {
+        padding: 120px 60px;
+        box-sizing: border-box;
+        color: #FFF;
+        background-color: aqua;
+    }
+}
