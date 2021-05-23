@@ -21,7 +21,7 @@
                     <h2 class="p-mainvisual__title">ダミーサイト</h2>
                 </div>
                 <ul class="p-brunchmenu">
-                    <li class="p-brunchmenu__list">
+                    <li class="p-brunchmenu__list takeout">
                         <h2 class="p-brunchmenu__list__title">Take Out</h2>
                         <ul class="p-brunchmenu__list__ul">
                             <li class="p-brunchmenu__list__ul__li">
@@ -38,7 +38,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="p-brunchmenu__list">
+                    <li class="p-brunchmenu__list eatin">
                         <h2 class="p-brunchmenu__list__title">Eat in</h2>
                         <ul class="p-brunchmenu__list__ul">
                             <li class="p-brunchmenu__list__ul__li">
@@ -67,9 +67,11 @@
         </main>
         <aside class="l-sidebar">
             <nav class="p-menu">
-                <ul><h2>menu</h2>
-                    <li>バーガー
-                        <ul>
+                <h2 class="p-menu__h2">Menu</h2>
+                <ul class="p-menu__list-lv1">
+                    <li class="p-menu__list-lv1__item">
+                        <h3 class="p-menu__h3">バーガー</h3>
+                        <ul class="p-menu__list-lv2">
                             <li>ハンバーガー</li>
                             <li>チーズバーガー</li>
                             <li>テリヤキバーガー</li>
@@ -79,16 +81,18 @@
                             <li>フィッシュバーガー</li>
                         </ul>
                     </li>
-                    <li>サイド
-                        <ul>
+                    <li class="p-menu__list-lv1__item">
+                        <h3 class="p-menu__h3">サイド</h3>
+                        <ul class="p-menu__list-lv2">
                             <li>ポテト</li>
                             <li>サラダ</li>
                             <li>ナゲット</li>
                             <li>コーン</li>
                         </ul>
                     </li>
-                    <li>ドリンク
-                        <ul>
+                    <li class="p-menu__list-lv1__item">
+                        <h3 class="p-menu__h3">ドリンク</h3>
+                        <ul class="p-menu__list-lv2">
                             <li>コーラ</li>
                             <li>ファンタ</li>
                             <li>オレンジ</li>
@@ -101,13 +105,13 @@
             </nav>
         </aside>
         <footer class="l-footer">
-            <ul>
-                <li>ショップ情報 | </li>
-                <li>ヒストリー</li>
+            <ul class="p-information">
+                <li class="p-information__list">ショップ情報</li>
+                <li class="p-information__list">ヒストリー</li>
             </ul>
-            <p class="p-copyright">
-                <small>Copyright: RaiseTech</small>
-            </p>
+            <address class="p-copyright">
+                <small><p>Copyright: RaiseTech</p></small>
+            </address>
         </footer>
     </article>
 </body>

@@ -1,0 +1,27 @@
+.p-menu {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    padding: 90px 30px;
+    color: #707070;
+    &__h2 {
+        font-weight: bold;
+        font-size: 2rem;
+        padding-bottom: 60px;
+    }
+    &__h3 {
+        font-weight: bold;
+        font-size: 1.3rem;
+        padding-bottom: 20px;
+    }
+    &__list-lv1 {
+        &__item {
+            margin-bottom: 20px;
+            line-height: 2.0;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

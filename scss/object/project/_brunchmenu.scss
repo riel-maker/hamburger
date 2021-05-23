@@ -1,5 +1,5 @@
 .p-brunchmenu {
-    background-color: rgb(224, 218, 211);
+    background-color: #FFF;
     padding: 100px;
     min-height: auto;
     display: flex;
@@ -8,10 +8,18 @@
         padding:15px;
         width: calc( 50% - 20px );
         height: 600px;
-        background-color: cadetblue;
+        background-color: tan;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        &.takeout {
+            background-image: url(/img/brunch-takeout.jpg);
+            background-size: cover;
+        }
+        &.eatin {
+            background-image: url(/img/brunch-eatin.jpg);
+            background-size: cover;
+        }
         &__title {
             color: #FFF;
             font-size: 4rem;
@@ -24,7 +32,6 @@
                 position: absolute;
                 top: 80px;
             }
-    
         }
         &__ul {
             &__li {
