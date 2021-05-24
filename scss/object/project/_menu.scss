@@ -7,10 +7,11 @@
     color: #707070;
     height: 100%;
     @include breakpoint( tablet ) {
-        left: 0;
+        left: 400px;
         width: 100vw;
         padding-left: 10%;
         background-color: #F2EDE9;
+        display: block;
     }
     &__h2 {
         font-weight: bold;
