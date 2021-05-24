@@ -5,6 +5,19 @@ html {
 
 body {
   font-family: 'M PLUS 1p', sans-serif;
+  overflow-x: hidden;
+}
+
+@media (max-width: 1024px) {
+  body {
+    position: static;
+  }
+}
+
+@media (max-width: 1024px) {
+  body.is-open {
+    position: fixed;
+  }
 }
 
 ul, li, dl, dt, dd, ol {
@@ -24,10 +37,23 @@ h1, h2, h3, h4, h5, h6, p {
           box-sizing: border-box;
 }
 
+@media (max-width: 1024px) {
+  .l-header {
+    position: relative;
+  }
+}
+
 .l-header h1 {
   color: #707070;
   font-weight: bold;
   font-size: 3.4vw;
+}
+
+@media (max-width: 1024px) {
+  .l-header h1 {
+    font-size: 3.2rem;
+    text-align: center;
+  }
 }
 
 .l-footer {
@@ -51,9 +77,44 @@ h1, h2, h3, h4, h5, h6, p {
   padding-top: 30px;
 }
 
+@media (max-width: 1024px) {
+  .l-footer {
+    width: 100%;
+    height: 150px;
+    padding-bottom: 10px;
+  }
+}
+
 .l-sidebar {
   background-color: #F2EDE9;
   width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1024px) {
+  .l-sidebar {
+    position: absolute;
+    width: 90%;
+    top: 0;
+    left: 100%;
+    z-index: 10;
+  }
+}
+
+@media (max-width: 1024px) {
+  .l-sidebar.is-open {
+    position: fixed;
+    left: 0;
+    width: 100vw;
+    padding-left: 10%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+@media (max-width: 1024px) {
+  .l-sidebar.is-open .p-menu {
+    overflow-y: scroll;
+  }
 }
 
 .l-container {
@@ -63,6 +124,13 @@ h1, h2, h3, h4, h5, h6, p {
       grid-template-columns: 1fr 19%;
   -ms-grid-rows: 1fr 150px;
       grid-template-rows: 1fr 150px;
+}
+
+@media (max-width: 1024px) {
+  .l-container {
+    display: block;
+    position: relative;
+  }
 }
 
 .p-mainvisual {
@@ -92,6 +160,17 @@ h1, h2, h3, h4, h5, h6, p {
           justify-content: space-between;
 }
 
+@media (max-width: 599px) {
+  .p-brunchmenu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    padding: 30px;
+  }
+}
+
 .p-brunchmenu__list {
   padding: 15px;
   width: calc( 50% - 20px);
@@ -107,6 +186,20 @@ h1, h2, h3, h4, h5, h6, p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media (max-width: 599px) {
+  .p-brunchmenu__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .p-brunchmenu__list:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .p-brunchmenu__list.takeout {
@@ -165,6 +258,12 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 60px;
 }
 
+@media (max-width: 599px) {
+  .p-access {
+    padding: 30px;
+  }
+}
+
 .p-access::before {
   content: "";
   background-color: #000;
@@ -175,6 +274,24 @@ h1, h2, h3, h4, h5, h6, p {
   z-index: 1;
   width: 60%;
   height: 100%;
+}
+
+@media (max-width: 1024px) {
+  .p-access::before {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+}
+
+@media (max-width: 599px) {
+  .p-access::before {
+    position: absolute;
+    height: 50%;
+    top: 0;
+    left: 0;
+  }
 }
 
 .p-access__contens {
@@ -200,6 +317,12 @@ h1, h2, h3, h4, h5, h6, p {
   line-height: 2;
   margin: 10px 0;
   width: calc(60% - 60px);
+}
+
+@media (max-width: 1024px) {
+  .p-access__contens__text {
+    width: 100%;
+  }
 }
 
 .p-access__map {
@@ -245,12 +368,28 @@ h1, h2, h3, h4, h5, h6, p {
   position: relative;
   padding: 90px 30px;
   color: #707070;
+  height: 100%;
+}
+
+@media (max-width: 1024px) {
+  .p-menu {
+    left: 0;
+    width: 100vw;
+    padding-left: 10%;
+    background-color: #F2EDE9;
+  }
 }
 
 .p-menu__h2 {
   font-weight: bold;
   font-size: 2rem;
   padding-bottom: 60px;
+}
+
+@media (max-width: 1024px) {
+  .p-menu__h2 {
+    display: none;
+  }
 }
 
 .p-menu__h3 {
@@ -301,5 +440,22 @@ h1, h2, h3, h4, h5, h6, p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.p-hamburger-bt {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #707070;
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,4 +1,26 @@
 .l-sidebar {
     background-color: #F2EDE9;
     width: 100%;
+    height: 100%;
+    @include breakpoint( tablet ) {
+        position: absolute;
+        width: 90%;
+        top: 0;
+        left: 100%;
+        z-index: 10;
+    }
+    &.is-open {
+        @include breakpoint( tablet ) {
+            position: fixed;
+            left: 0;
+            width: 100vw;
+            padding-left: 10%;
+            background-color: rgba(0,0,0,.5);
+        }
+        .p-menu {
+            @include breakpoint( tablet ) {
+                overflow-y: scroll;
+            }
+        }
+    }
 }

@@ -1,5 +1,16 @@
 html { font-size:62.5%; }
-body { font-family: 'M PLUS 1p', sans-serif; }
+body { 
+  font-family: 'M PLUS 1p', sans-serif;
+  overflow-x: hidden;
+  @include breakpoint( tablet ) {
+    position: static;
+  }
+  &.is-open {
+    @include breakpoint( tablet ) {
+      position: fixed;
+    }
+  }
+}
 
 ul, li, dl, dt, dd, ol {
   list-style: none;

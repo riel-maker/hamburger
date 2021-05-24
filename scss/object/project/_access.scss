@@ -2,6 +2,9 @@
     color: white;
     position: relative;
     padding: 60px;
+    @include breakpoint( sp ) {
+        padding: 30px;
+    }
     &::before {
         content: "";
         background-color: #000;
@@ -12,6 +15,18 @@
         z-index: 1;
         width: 60%;
         height: 100%;
+        @include breakpoint( tablet ) {
+            position: absolute;
+            width: 100%;
+            top: 0;
+            left: 0;
+        }
+        @include breakpoint( sp ) {
+            position: absolute;
+            height: 50%;
+            top: 0;
+            left: 0;
+        }
     }
     &__contens {
         position: relative;
@@ -32,6 +47,9 @@
             line-height: 2;
             margin: 10px 0;
             width: calc(60% - 60px);
+            @include breakpoint( tablet ) {
+                width: 100%;
+            }
         }
     }
     &__map {
