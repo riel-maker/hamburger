@@ -11,4 +11,51 @@
     position: absolute;
     top: 20px;
     right: 20px;
+    display: none;
+    @include breakpoint(tablet){
+        display: block;
+    }
+    @include breakpoint(sp){
+        display: block;
+        font-size: 1.8rem;
+    }
+}
+
+$btnWidth:30px;
+$btnHeight:2px;
+
+.p-hamburger-bt--close {
+    width: 30px;
+    height: 30px;
+    top:20px;
+    right: 20px;
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    appearance: none;
+    display: none;
+    @include breakpoint(tablet){
+        display: block;
+    }
+    &::before,
+    &::after{
+        content: "";
+        width: $btnWidth;
+        height: $btnHeight;
+        background: #666;
+        position: absolute;
+        left:calc(50%-(#{&btnWidth}/2));
+        display: block;
+        transition: transform 0.2;
+    }
+
+    &::before {
+        transform: rotate(45deg);
+    }
+    &::after {
+        transform: rotate(-45deg);
+    }
 }

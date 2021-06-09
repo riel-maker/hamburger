@@ -1,14 +1,14 @@
 .p-menu {
     display:flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: start;
     position: relative;
     padding: 90px 30px;
     color: #707070;
     height: 100%;
     @include breakpoint( tablet ) {
-        left: 400px;
-        width: 100vw;
+        // left: 400px;
+        width: 100%;
         padding-left: 10%;
         background-color: #F2EDE9;
         display: block;
@@ -24,15 +24,22 @@
     &__h3 {
         font-weight: bold;
         font-size: 1.3rem;
-        padding-bottom: 20px;
+        margin-bottom: 15px;
     }
     &__list-lv1 {
         &__item {
-            margin-bottom: 20px;
+            margin-bottom: 30px;
             line-height: 2.0;
             &:last-child {
                 margin-bottom: 0;
             }
+        }
+    }
+    &__list-lv2 {
+        margin-left: 20px;
+        line-height: 2.6;
+        &:last-child {
+            margin-bottom: 0;
         }
     }
 }
