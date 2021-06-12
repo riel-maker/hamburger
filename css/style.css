@@ -43,14 +43,14 @@ h1, h2, h3, h4, h5, h6, p {
   }
 }
 
-.l-header h1 {
+.l-header-title {
   color: #707070;
   font-weight: bold;
   font-size: 3.4vw;
 }
 
 @media (max-width: 1024px) {
-  .l-header h1 {
+  .l-header-title {
     font-size: 3.2rem;
     text-align: center;
   }
@@ -533,21 +533,10 @@ h1, h2, h3, h4, h5, h6, p {
 .p-archive {
   width: 100%;
   min-height: 120px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: relative;
 }
 
-.p-archive__title {
-  padding: 60px 100px;
+.p-headline {
+  padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   color: #FFF;
@@ -555,15 +544,29 @@ h1, h2, h3, h4, h5, h6, p {
   display: inline-block;
   vertical-align: middle;
   z-index: 1;
+  position: relative;
+  width: 100%;
 }
 
-.p-archive__title__small {
+.p-headline__title {
+  padding: 60px 70px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #FFF;
+  font-size: 3rem;
+  display: inline-block;
+  vertical-align: middle;
+  z-index: 1;
+  position: relative;
+}
+
+.p-headline__title__small {
   font-size: 1.3rem;
   display: inline-block;
   vertical-align: middle;
 }
 
-.p-archive::before {
+.p-headline::before {
   background-image: url(/img/archive.png);
   background-size: cover;
   content: "";
@@ -576,7 +579,7 @@ h1, h2, h3, h4, h5, h6, p {
   z-index: -1;
 }
 
-.p-archive::after {
+.p-headline::after {
   content: "";
   display: block;
   background: rgba(0, 0, 0, 0.6);
@@ -586,5 +589,143 @@ h1, h2, h3, h4, h5, h6, p {
   left: 0;
   position: absolute;
   z-index: 0;
+}
+
+.p-sentence {
+  color: #3C2B1C;
+  width: 100%;
+  height: 100%;
+  padding: 40px 70px;
+}
+
+.p-sentence h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.p-cards {
+  padding: 10px 70px;
+  display: block;
+}
+
+@media (max-width: 599px) {
+  .p-cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    padding: 30px;
+  }
+}
+
+.p-cards__list {
+  margin-bottom: 20px;
+}
+
+.p-card {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 599px) {
+  .p-card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    padding: 30px;
+  }
+}
+
+.p-card__thumbnail {
+  width: 50%;
+  background-color: tan;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 599px) {
+  .p-card__thumbnail {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .p-card__thumbnail:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.p-card__caption {
+  padding: 30px;
+  width: 50%;
+  background-color: #3C2B1C;
+}
+
+.p-card__caption h4 {
+  color: #FFF;
+  font-size: 2rem;
+}
+
+.p-card__caption h5 {
+  color: #FFF;
+  font-size: 1.4rem;
+  margin: 30px 0 10px;
+}
+
+.p-card__caption p {
+  color: #FFF;
+  font-size: 1.1rem;
+}
+
+.p-card__caption a {
+  background: #FFF;
+  color: #3C2B1C;
+  display: block;
+  width: 200px;
+  padding: 20px 60px;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+  border-radius: 45px;
+  text-align: center;
+}
+
+.p-card__title {
+  color: #FFF;
+  font-size: 4rem;
+  position: relative;
+}
+
+.p-card__title::after {
+  content: "";
+  display: block;
+  border-bottom: solid #FFF 2px;
+  width: 40px;
+  position: absolute;
+  top: 80px;
+}
+
+.p-card__ul__li {
+  margin-bottom: 15px;
+}
+
+.p-card__ul__li:last-child {
+  margin-bottom: 0;
+}
+
+.p-pagenation {
+  color: #3C2B1C;
+  width: 100%;
+  height: 100%;
+  padding: 100px 0 20px;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
