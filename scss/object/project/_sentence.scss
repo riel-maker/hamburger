@@ -7,4 +7,13 @@
             font-size: 2rem;
             margin-bottom: 10px;
         }
+        @include breakpoint( sp ) {
+            flex-direction: column;
+            width: 100%;
+            margin-bottom: 0;
+            padding: 30px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
 }

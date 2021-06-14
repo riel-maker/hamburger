@@ -1,0 +1,15 @@
+.p-single {}
+
+.p-mainvisual--single {
+    width: 100%;
+    min-height: 285px;
+    background-size: cover;
+    position: relative;
+    &__title {
+        padding: 120px 60px;
+        box-sizing: border-box;
+        color: #FFF;
+        font-size: 3rem;
+        position: absolute;
+    }
+}
