@@ -761,19 +761,55 @@ h1, h2, h3, h4, h5, h6, p {
   text-align: center;
 }
 
+.p-single {
+  padding: 40px 60px;
+  line-height: 6rem;
+}
+
 .p-mainvisual--single {
   width: 100%;
-  min-height: 285px;
-  background-size: cover;
+  height: 500px;
   position: relative;
+  overflow: hidden;
 }
 
 .p-mainvisual--single__title {
-  padding: 120px 60px;
+  height: 500px;
+  top: 0;
+  left: 0;
+  color: #FFF;
+  font-size: 4rem;
+  position: absolute;
+  margin-bottom: 20px;
+  padding: 35px;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  color: #FFF;
-  font-size: 3rem;
+}
+
+.p-mainvisual--single__image {
+  width: auto;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+  max-width: inherit;
   position: absolute;
+  left: 50%;
+  top: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  font-family: 'object-fit: cover;';
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 /*# sourceMappingURL=style.css.map */
